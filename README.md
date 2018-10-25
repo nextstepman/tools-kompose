@@ -2,7 +2,7 @@ Kubernetes Kompose in a (docker) box.
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`](https://github.com/nextstepman/tools-kompose/blob/master/Dockerfile): contains ubuntu:xenial with current (1.12.0) kompose installed to it
+-	[`latest`](https://github.com/nextstepman/tools-kompose/blob/master/Dockerfile): contains ubuntu:xenial with current (1.16.0) kompose installed to it
 
 # Usage
 
@@ -13,5 +13,11 @@ You can mount your current workdir to the /home/kompose/workdir folder (or other
 
 ```
 docker run -it --rm -v `pwd`:/home/kompose/workdir nextstepman/tools-kompose:latest
+```
+
+Or make that an alias like this in your profile:
+
+```
+alias kompose="docker run -it --rm -v `pwd`:/home/kompose/workdir nextstepman/tools-kompose:latest"
 ```
 

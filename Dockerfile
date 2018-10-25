@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 
-ARG KOMPOSE_VERSION=v1.12.0
+ARG KOMPOSE_VERSION=v1.16.0
 ARG KOMPOSE_URL=https://github.com/kubernetes/kompose/releases/download/${KOMPOSE_VERSION}/kompose-linux-amd64
 
 ENV KOMPOSE_PATH /home/kompose
