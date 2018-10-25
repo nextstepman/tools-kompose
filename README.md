@@ -18,6 +18,6 @@ docker run -it --rm -v `pwd`:/home/kompose/workdir nextstepman/tools-kompose:lat
 Or make that an alias like this in your profile:
 
 ```
-alias kompose="docker run -it --rm -v `pwd`:/home/kompose/workdir nextstepman/tools-kompose:latest"
+alias kompose="docker run -it --rm -v \$(pwd):/home/kompose/workdir nextstepman/tools-kompose:latest"
 ```
 
